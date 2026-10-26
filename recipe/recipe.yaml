@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: gaphas
-  version: 5.1.2
+  version: "5.1.3"
   python_min: "3.9"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/gaphas-${{ version }}.tar.gz
-  sha256: 5dd6b05931f3856a96b623269b50187231b4abf7b9849f48f7eec52898563696
+  sha256: 31ed1caeb9d4c8e373fbe47cab4c57a5ac2ac315a0115d432dfeb2eabaf1f498
 
 build:
   number: 0
@@ -34,8 +34,8 @@ tests:
         - gaphas
       pip_check: true
       python_version:
-         - ${{ python_min }}.*
-         - "*"
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   homepage: https://github.com/gaphor/gaphas
